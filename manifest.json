@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "VisiTimer",
+  "version": "3.0",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.visiplus-digital-learning.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon_red.png",
+      "48": "icon_red.png",
+      "128": "icon_red.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["logo-visiplus.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
